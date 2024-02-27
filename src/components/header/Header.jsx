@@ -35,10 +35,10 @@ function Header() {
               </a>
             </li>
           </ul>
-          <div className="nav">
+          <div className="nav-flex">
             {" "}
-            <p className="nav-description">Cart ( 0 )</p>
-            <button className="nav-btn"> Get a free quote</button>
+            <p className="nav-flex-description">Cart ( 0 )</p>
+            <button className="nav-flex-btn"> Get a free quote</button>
           </div>
         </nav>
       </div>
