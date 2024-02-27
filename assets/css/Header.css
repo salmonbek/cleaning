@@ -1,0 +1,118 @@
+.header {
+  background: #fff;
+  padding: 28px;
+  -webkit-box-shadow: 0px 0px 10px 0.8px #0075ff;
+          box-shadow: 0px 0px 10px 0.8px #0075ff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 41px;
+}
+.header .nav .nav-list-item a {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #211f54;
+}
+.header .nav .nav-list-item a:hover {
+  color: grey;
+}
+.header .nav .nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+.header .nav .nav-flex-description {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #211f54;
+}
+.header .nav .nav-flex-btn {
+  padding: 17px 25px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  background: #0075ff;
+  border-radius: 10px;
+}
+.header .nav .nav-flex-btn:hover {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 1035px) {
+  .header .container .nav .nav-list {
+    gap: 10px;
+  }
+}
+@media (max-width: 882px) {
+  .header .container .nav .nav-list-item {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .header .container .nav .nav-flex {
+    display: none;
+  }
+}
