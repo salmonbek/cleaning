@@ -1,0 +1,14 @@
+.header {
+  background-color: red;
+  padding: 20px;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
